@@ -12,11 +12,11 @@ int main()
 	{
 		printf("$ ");
 		characters = getline(&buffer, &bufsize, stdin);
-		token = strtok(str, " ");
+		token = strtok(buffer, " ");
 		while (token != NULL)
 	    {
 			printf("%s\n", token);
-			token = strtok(NULL, s);
+			token = strtok(NULL, " ");
 	    }
 		if (characters == -1)
 		{
